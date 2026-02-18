@@ -1,0 +1,25 @@
+{
+  "streamUrl": "https://SEU_STREAM_AQUI",
+  "banner": {
+    "text": "\ud83c\udfaf Anuncie aqui - Sua marca em destaque!",
+    "link": "https://exemplo.com"
+  },
+  "schedule": [
+    {
+      "time": "08:00",
+      "title": "Manh\u00e3 Musical"
+    },
+    {
+      "time": "12:00",
+      "title": "Jornal da Cidade"
+    },
+    {
+      "time": "18:00",
+      "title": "Top Hits"
+    },
+    {
+      "time": "22:00",
+      "title": "Madrugada Light"
+    }
+  ]
+}

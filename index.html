@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rádio Exemplo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+<header class="header"><h1>🎧 Rádio Exemplo</h1></header>
+<section id="banner-top" class="ad">Carregando banner...</section>
+<main class="main">
+  <h2>Ao Vivo</h2>
+  <p>Ouvintes conectados: <span id="listeners">0</span></p>
+</main>
+<div class="floating-player">
+  <audio id="radioPlayer" controls autoplay>
+    <source src="https://sapircast.caster.fm:16050/stream" type="audio/mpeg">
+  Seu navegador não suporta áudio.
+  </audio>
+</div>
+<footer class="footer">
+  <a href="programacao.html">Programação</a> |
+  <a href="admin.html">Admin</a>
+  <p>© 2026 Rádio Exemplo</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

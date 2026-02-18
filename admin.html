@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Rádio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header"><h1>⚙️ Painel Admin</h1></header>
+<main class="main">
+  <h3>URL do Stream</h3>
+  <input id="streamUrl" class="input"/>
+  <h3>Banner</h3>
+  <input id="bannerText" class="input" placeholder="Texto"/>
+  <input id="bannerLink" class="input" placeholder="Link"/>
+  <h3>Programação (JSON)</h3>
+  <textarea id="scheduleJson" rows="6" class="textarea"></textarea>
+  <button onclick="saveConfig()" class="btn">Salvar</button>
+</main>
+<footer class="footer"><a href="index.html">Voltar</a></footer>
+<script src="admin.js"></script>
+</body>
+</html>
