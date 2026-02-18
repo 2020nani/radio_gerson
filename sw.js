@@ -2,7 +2,7 @@ self.addEventListener('fetch', event => {
 
   const url = event.request.url;
 
-  // ❌ NÃO interceptar stream de rádio
+  
   if (
     url.includes('caster.fm') ||
     url.includes(':16050')
