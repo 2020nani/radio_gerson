@@ -1,2 +1,17 @@
-self.addEventListener('install',e=>{e.waitUntil(caches.open('radio').then(c=>c.addAll(['index.html','style.css','script.js','programacao.html'])))});
-self.addEventListener('fetch',e=>{e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)))});
+self.addEventListener('fetch', event => {
+
+  const url = event.request.url;
+
+  // ❌ NÃO interceptar stream de rádio
+  if (
+    url.includes('caster.fm') ||
+    url.includes(':16050')
+  ) {
+    return;
+  }
+
+  event.respondWith(
+    caches.match(event.request)
+      .then(response => response || fetch(event.request))
+  );
+});
